@@ -1,7 +1,10 @@
-from citas import*
+from citas import *
 
 
-def ingresar_al_sistema():
+class menu:
+    def __init__(self):
+        pass
+    def ingresar_al_sistema(self):
         print("""seleccione
 1. Doctor
 2. Paciente""") 
@@ -42,7 +45,7 @@ def ingresar_al_sistema():
                     if a=='1' or a=='Registrar citas':
                         print(""" Seleccione la especialidad de la cita  
 1.Odontologia 
-2.Medicina general                         
+2.Medicina general
 3.Pediatria""")
                         break
                     elif a=='2' or a== 'Consultar citas':
@@ -55,10 +58,8 @@ def ingresar_al_sistema():
                         print(""" Seleccione la especialidad de la cita  
 1.Odontologia 
 2.Medicina general                         
-3.Pediatria""")
-                        break    
-                    else: print('error\n')
-                    break
-
+3.Pediatria""")                                                                                           
                 break
-            else: print('error\n')
+        else: print('error\n')
+c1=menu()
+c1.ingresar_al_sistema()
