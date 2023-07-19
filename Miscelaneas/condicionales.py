@@ -27,27 +27,28 @@ sumaImpares(1,10)
 # y los segundos actuales, el sistema le mostrara que horas son un segundo despues de la 
 # hora que inserto 
 
-hora = int(input("Ingrese la hora: "))
-minutos = int(input("Ingrese los minutos: "))
-segundos = int(input("Ingrese los segundos: "))
+#hora = int(input("Ingrese la hora: "))
+#minutos = int(input("Ingrese los minutos: "))
+#segundos = int(input("Ingrese los segundos: "))
 
 def hora():
-    hora = int(input("Ingrese la hora: "))
     if hora == 24 and segundos == 59:
         hora = 0
     elif hora < 24 and segundos == 59 and minutos == 59:
         hora = hora + 1
 
 def minutos():
+    minutos = int(input("Ingrese los minutos: "))
     if minutos == 59 and segundos == 59:
         minutos = 1
     elif minutos < 59 and segundos == 59:
         minutos = minutos + 1
 
 def segundos():
+    segundos = int(input("Ingrese los segundos: "))
     if segundos == 59:
         segundos = 0
     elif segundos < 59:
         segundos = segundos + 1
 
-print ('Son las :', (hora) , 'horas con ',(minutos) ,'minutos y ' ,(segundos) ,':')
+print ('Son las :', (hora()) , 'horas con ',(minutos()) ,'minutos y ' ,(segundos()) ,':')
