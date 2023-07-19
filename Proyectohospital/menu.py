@@ -1,18 +1,64 @@
-class menu:
-    def __init__(self):
-        pass
-    def ingresar_al_sistema(self):
+from citas import*
+
+
+def ingresar_al_sistema():
         print("""seleccione
 1. Doctor
 2. Paciente""") 
         while True:
             a=str(input('--> '))
             if a=='1' or a=='Doctor':
-                print('ingreso al sistema')
-                break
+                print('''Bienvenido al menú, seleccione su especialidad:
+1.Odontologia
+2.Medicina general 
+3.Pediatria''')
+                while True:
+                    a=str(input('--> '))
+                    if a=='1' or a=='Odontologia':
+                        print("""Que acción quiere realizar
+1.Consultar citas Odontologia  
+2.Salir """)
+                        break
+                    elif a== 2 or a== 'Medicina  general':
+                        print("""Que acción quiere realizar
+1.Consultar citas Medicina general 
+2.Salir """)
+                        break
+                    elif a==3 or a== 'Pediatria':
+                        print("""Que acción quiere realizar
+1.Consultar citas Pediatria 
+2.Salir """)
+                    else: print('error\n')    
+                    break
+            
+                
             elif a=='2' or a=='Paciente':
-                print('ingreso al sistema')
+                print('''Bienvenido al menú, que acción desea realizar: 
+1. Regitrar citas 
+2. Consultar citas
+3. Eliminar citas ''')
+                while True:
+                    a=str(input('--> '))
+                    if a=='1' or a=='Registrar citas':
+                        print(""" Seleccione la especialidad de la cita  
+1.Odontologia 
+2.Medicina general                         
+3.Pediatria""")
+                        break
+                    elif a=='2' or a== 'Consultar citas':
+                        print(""" Seleccione la especialidad de la cita  
+1.Odontologia 
+2.Medicina general                         
+3.Pediatria""")
+                        break
+                    elif a=='3' or a== 'Eliminar citas':
+                        print(""" Seleccione la especialidad de la cita  
+1.Odontologia 
+2.Medicina general                         
+3.Pediatria""")
+                        break    
+                    else: print('error\n')
+                    break
+
                 break
             else: print('error\n')
-c1=menu()
-c1.ingresar_al_sistema()
