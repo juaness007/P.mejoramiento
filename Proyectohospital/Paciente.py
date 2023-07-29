@@ -33,3 +33,21 @@ class Paciente(citas):
                               "Fecha:  ":fecha,
                               "Hora: ":hora,
                               "Consultorio: ":consultorio}
+        
+    def eliminarCitas ():
+        for Paciente.comprobante in Paciente.citasAgenda:
+            eliminarCitas= input('Ingrese el nombre del paciente con el cual registró la cita: ')
+            if Paciente.comprobante ['nombrePaciente'] == eliminarCitas:
+                Paciente.citasAgenda.remove(Paciente.comprobante)
+                print("Su cita ha sido eliminada con exito!")
+
+    def consultarCitas():
+        for Paciente.comprobante in Paciente.citasAgenda:
+            consulta= input("Ingrese el nombre del paciente con el cual registró la cita: ")
+            if Paciente.comprobante["nombrePaciente"] == consulta:
+                print(" Usted tiene una cita")
+                print(Paciente.comprobante)
+            else:
+                print('Usted no tiene ninguna cita agendada')
+
+    def                     

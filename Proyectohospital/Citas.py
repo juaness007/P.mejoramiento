@@ -11,4 +11,4 @@ class citas:
         
 
     def getcitas(self):
-            return f'{self.__nombreDoctor},{self.__fecha / self.__hora},{self.__motivo},{self.__consultorio},'
+            return self.__nombrePaciente, self.__tipoDocumento, self.__documento, self.__fecha, self.__hora, self.__consultorio, self.__nombreDoctor, self.__motivo
