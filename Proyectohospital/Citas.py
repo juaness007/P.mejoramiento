@@ -16,15 +16,15 @@ class citas:
 
     def getcitas(self):
         return f''' -------------------------------
-                        {self.__nombrePaciente} 
-                        {self.__tipoDocumento}
-                        {self.__documento}
-                        {self.__fecha}
-                        {self.__hora}
-                        {self.__consultorio}
-                        {self.__nombreDoctor}
-                        {self.__motivo}
-                        {self.__especialidad}
+                Nombre del paciente:{self.__nombrePaciente} 
+                Tipo de documento:{self.__tipoDocumento}
+                Numero de documento:{self.__documento}
+                Fecha de la cita:{self.__fecha}
+                Hora de la cita:{self.__hora}
+                Numero de consultorio:{self.__consultorio}
+                Nombre del doctor:{self.__nombreDoctor}
+                Motivo de la cita:{self.__motivo}
+                Especialidad de la cita:{self.__especialidad}
             -------------------------------'''
         
     def getNombre(self):

@@ -13,8 +13,7 @@ seleccione
         print(''' 
 ---------------
 1. Consultar citas agendadas 
-2. Registrar Citas
-3. Salir 
+2. Salir 
 ---------------                     ''')
         a=str(input('--> '))
         if a == '1' or a == 'Consultar citas agendadas':      
